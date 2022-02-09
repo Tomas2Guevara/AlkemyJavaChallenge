@@ -19,4 +19,5 @@ public interface Production_RP extends JpaRepository<Production, String> {
 
     @Query("SELECT a FROM Autor a WHERE a.titulo = :titulo")
     public Production findByName(@Param("titulo") String titulo);
+    
 }
